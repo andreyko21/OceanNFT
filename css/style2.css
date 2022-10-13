@@ -1,0 +1,243 @@
+.left-block-nft__title {
+  font-family: 'Rajdhani';
+  font-style: normal;
+  font-weight: 700;
+}
+
+.button-background,
+.seller-nft__nick-name,
+.left-block-nft__price-title,
+.right-block-nft__title {
+  font-family: 'Rajdhani';
+  font-style: normal;
+  font-weight: 600;
+}
+
+.price-nft__price-crypto,
+.info-section,
+.show__button {
+  font-family: 'Orbitron';
+  font-style: normal;
+  font-weight: 700;
+}
+
+.price-nft__price-money {
+  font-family: 'Rajdhani';
+  font-style: normal;
+  font-weight: 400;
+}
+
+.small-arrow {
+  max-width: 40px;
+}
+
+.top-nft {
+  margin-top: 200px;
+}
+
+.info-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider-top-nft {
+  margin-top: 47px;
+  overflow: hidden;
+}
+
+.nft-item__img {
+  width: 100%;
+  height: 100%;
+}
+
+.info-section {
+  font-size: 26.531px;
+  line-height: 33px;
+}
+
+.info-nft {
+  position: relative;
+  padding: 20px 25px 15px 25px;
+  border: 2px solid;
+  box-sizing: border-box;
+  border: 2.88px solid;
+  border-image-source: linear-gradient(145.77deg, rgba(255, 255, 255, 0.28) 0%, rgba(255, 255, 255, 0) 105.76%);
+  border-image-slice: 1;
+  display: flex;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) -1.52%, rgba(255, 255, 255, 0.024) 104.35%);
+  justify-content: space-between;
+}
+
+.nft-item__info-nft {
+  top: -4px;
+}
+
+.left-block-nft__title {
+  font-size: 23.0401px;
+  line-height: 46px;
+}
+
+.seller-nft {
+  display: flex;
+  align-items: center;
+}
+
+.seller-nft__user-img {
+  width: 100%;
+  height: 100%;
+  max-width: 37px;
+  max-height: 37px;
+}
+
+.seller-nft__nick-name {
+  font-size: 20.1601px;
+  line-height: 46px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.left-block-nft__price-title {
+  font-size: 14.4001px;
+  line-height: 46px;
+  opacity: 0.7;
+}
+
+.price-nft {
+  display: flex;
+  align-items: center;
+}
+
+.price-nft__crypto-icon::before {
+  content: "\e901";
+  font-size: 26px;
+}
+
+.price-nft__price-crypto {
+  margin-right: 5px;
+  font-size: 12.6587px;
+  line-height: 16px;
+}
+
+.price-nft__price-money {
+  font-size: 14.4001px;
+  line-height: 46px;
+  opacity: 0.7;
+}
+
+.right-block-nft__title {
+  font-size: 14.4001px;
+  line-height: 46px;
+  opacity: 0.7;
+}
+
+.timer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.timer__time {
+  font-size: 23.0401px;
+  line-height: 24px;
+}
+
+.timer__time-type {
+  font-size: 14.4001px;
+  line-height: 23px;
+}
+
+.button-background {
+  margin-top: 35px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  padding: 15px 20px;
+  box-sizing: border-box;
+  background: linear-gradient(90deg, #FF56F6 21.43%, #B936EE 50.63%, #3BACE2 100%, #406AFF 117.04%);
+  border: 2px solid;
+  border-image: linear-gradient(270deg, #FFA6FA 47.49%, #3C79D5 98.81%);
+  border-image-slice: 1;
+}
+
+.button-background:hover {
+  background: linear-gradient(-90deg, #FF56F6 21.43%, #B936EE 50.63%, #3BACE2 100%, #406AFF 117.04%);
+}
+
+.button-background-img {
+  margin-left: 5px;
+  max-width: 31px;
+  max-height: 12px;
+  width: 100%;
+  height: 100%;
+  font-size: 23.0401px;
+  line-height: 29px;
+}
+
+.collections {
+  margin-top: 160px;
+}
+
+.show {
+  display: flex;
+  justify-content: space-between;
+}
+
+.show__buttons {
+  display: grid;
+  grid-template:
+    'ec ec'
+    'item item'
+    'item item'
+    'item item'
+    'item item'
+    'ec2 ec2';
+  grid-gap: 43px;
+  max-height: 100px;
+}
+
+.show__button {
+  background: none;
+  display: block;
+  border: 2px solid;
+  border-image-source: linear-gradient(272.52deg, rgba(255, 166, 250, 0.3) 47.49%, rgba(60, 121, 213, 0.3) 98.81%);
+  border-image-slice: 1;
+  padding: 34px 95px;
+  font-size: 26.531px;
+  line-height: 33px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.show__button:hover {
+  background: linear-gradient(92.23deg, #FF56F6 21.43%, #B936EE 50.63%, #3BACE2 100%, #406AFF 117.04%);
+  background-repeat: no-repeat;
+}
+
+.show__button:active{
+  background: linear-gradient(92.23deg, #FF56F6 21.43%, #B936EE 50.63%, #3BACE2 100%, #406AFF 117.04%);
+  background-repeat: no-repeat;
+}
+
+.grid-area-EC {
+  grid-area: ec;
+}
+
+.grid-area-EC2 {
+  grid-area: ec2;
+  margin-left: auto;
+}
+
+.show-buttons__left-text {
+  font-size: 19.8983px;
+  line-height: 25px;
+}
+
+
+
+.show__img {
+  max-height: 814px;
+  width: 100%;
+  height: 100%;
+  
+}

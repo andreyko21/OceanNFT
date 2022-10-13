@@ -1,0 +1,49 @@
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?pcl3m0');
+    src:  url('../fonts/icomoon.eot?pcl3m0#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?pcl3m0') format('truetype'),
+      url('../fonts/icomoon.woff?pcl3m0') format('woff'),
+      url('../fonts/icomoon.svg?pcl3m0#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+
+@font-face {
+    font-family: 'Orbitron';
+    src: url(../fonts/Orbitron-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'Spartan';
+  src: url(../fonts/Spartan-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: 'Aldrich';;
+  src: url(../fonts/Aldrich-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Alethia Next';
+  src: url(../fonts/alethianext-light.otf);
+}
+
+@font-face {
+  font-family: 'Rajdhani';
+  src: url(../fonts/Rajdhani-Bold.ttf);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Rajdhani';
+  src: url(../fonts/Rajdhani-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Rajdhani';
+  src: url(../fonts/Rajdhani-SemiBold.ttf);
+  font-weight: 600;
+}
