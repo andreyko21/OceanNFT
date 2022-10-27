@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="./css/resetStyle.css">
     <link rel="stylesheet" href="./css/fonts.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/style2.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <title>Document</title>
 </head>
@@ -18,9 +17,9 @@
         <div class="container header__container">
             <nav class="nav header__nav">
                 <div class="nav__phone-menu">
-                    <div class="header__logo">
+                    <div class="logo header__logo">
                         <a href="#">
-                            <img src="./img/logo.svg" alt="">
+                            <span class="opacity">Ocean</span>NFT
                         </a>
                     </div>
                     <div class="burger-menu">
@@ -53,234 +52,269 @@
     </header>
     <section class="first-section">
         <div class="container first-section__container">
-            <div class="title-block first-section-title-block">
-                <h1 class="title-block__title">Discover, collect, and sell <span class="gradient">Timeless</span> NFTs
-                </h1>
-                <p class="title-block__description">The world’s first and largest digital marketplace for crypto
+            <div class="title-text-block first-section__title-text-block">
+                <h1 class="title-text-block__title-page">Discover, collect, and sell <span
+                        class="gradient">Timeless</span> NFTs</h1>
+                <p class="title-text-block__description">The world’s first and largest digital marketplace for crypto
                     collectibles and non- fungible tokens (NFTs). </p>
-                <div class="buttons-block">
-                    <div class="button button-border-color figure-1">
-                        <a class="button-elements figure-1" href="#">
-                            Explore
-                            <img class="arrow-button" src="./img/arrow.svg" alt="">
-                        </a>
-                    </div>
-                    <a class="gradient-2 button button-text" href="#">Create NFT’s</a>
+                <div class="title-text-block__buttons">
+                    <a href="#" class="button-vertical">
+                        <span class="button-vertical__background">
+                            <span>Explore</span>
+                            <img class="arrow" src="./img/arrow.svg" alt="arrow">
+                        </span>
+                    </a>
+                    <a href="" class="button-text">
+                        Create NFT’s
+                    </a>
                 </div>
-                <ul class="info title-block__info">
-                    <li class="info__item">
-                        <p class="info__title">35m+</p>
-                        <p class="info__description">Artwork</p>
+                <div class="title-text-block__info-title-text-block-nft">
+                    <div class="info-title-text-block-nft__item">
+                        <p class="title-info">35m+</p>
+                        <p class="description-info">Artwork</p>
+                    </div>
+                    <div class="info-title-text-block-nft__item"></div>
+                    <div class="info-title-text-block-nft__item">
+                        <p class="title-info">18m+</p>
+                        <p class="description-info">Auctions</p>
+                    </div>
+                    <div class="info-title-text-block-nft__item"></div>
+                    <div class="info-title-text-block-nft__item">
+                        <p class="title-info">500k+</p>
+                        <p class="description-info">Artists</p>
+                    </div>
+                </div>
+            </div>
+            <div class="title-picture-block first-section__title-picture-block">
+                <div class="title-picture-block__picture">
+                    <img src="./img/title-picture.png" alt="title-picture" class="title-picture-block__img">
+                </div>
+                <div class="title-picture-block__info-picture-border">
+                    <div class="info-picture title-picture-block__info-picture">
+                        <div class="info-picture__left-block">
+                            <p class="info-picture__title-left-block">3D Abstract Hand</p>
+                            <div class="info-picture__user-info">
+                                <div class="info-picture__user-picture">
+                                    <img src="./img/user.svg" alt="user-img" class="info-picture__user-img">
+                                </div>
+                                <p class="user-nick-name">@jhonartist</p>
+                                <div class="user-authentication info-picture__user-authentication">
+                                    <img src="./img/user-authentication.svg" alt="authentication"
+                                        class="user-authentication-img">
+                                </div>
+                            </div>
+                            <p class="info-picture__title-prise">Reserve price</p>
+                            <div class="info-picture__price">
+                                <span class="price__icon"></span>
+                                <span class="price__crypto">
+                                    ETH 9.31
+                                </span>
+                                <span class="price__money">
+                                    ($29,8846)
+                                </span>
+                            </div>
+                        </div>
+                        <div class="info-picture__right-block">
+                            <p class="info-picture__title-right-block">Auction Ends in</p>
+                            <div class="info-picture__timer">
+                                <div class="timer__item">
+                                    <p class="timer__time">18</p>
+                                    <p class="timer__description">Hours</p>
+                                </div>
+                                <div class="timer__item">
+                                    <p class="timer__time">25</p>
+                                    <p class="timer__description">Mins</p>
+                                </div>
+                                <div class="timer__item">
+                                    <p class="timer__time">44</p>
+                                    <p class="timer__description">Secs</p>
+                                </div>
+                            </div>
+                            <a href="#" class="button button-radius">
+                                <span>Place Bid</span>
+                                <img class="arrow" src="./img/arrow-2.svg" alt="arrow">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="first-section__partners">
+                <ul class="list-partners">
+                    <li class="partners__item">
+                        <img src="./img/partners1.svg" alt="#" class="partners__img">
                     </li>
-                    <li class="info__item"></li>
-                    <li class="info__item">
-                        <p class="info__title">18m+</p>
-                        <p class="info__description">Auctions</p>
+                    <li class="partners__item">
+                        <img src="./img/partners2.svg" alt="#" class="partners__img">
                     </li>
-                    <li class="info__item"></li>
-                    <li class="info__item">
-                        <p class="info__title">500k+</p>
-                        <p class="info__description">Artists</p>
+                    <li class="partners__item">
+                        <img src="./img/partners3.svg" alt="#" class="partners__img">
+                    </li>
+                    <li class="partners__item">
+                        <img src="./img/partners4.svg" alt="#" class="partners__img">
                     </li>
                 </ul>
             </div>
-            <div class="title-picture">
-                <div class="title-picture__img-block">
-                    <img class="title-picture__nft-img" src="./img/image 62.png" alt="NFT">
-                </div>
-                <div class="info-img-div-background">
-                    <div class="info-img">
-                        <div class="info-img__left-block">
-                            <p class="info-img__title">3D Abstract Hand</p>
-                            <div class="info-img__seller">
-                                <img class="user-img" src="./img/Ellipse 276.png" alt="user-img">
-                                <p class="nick-name">@jhonartist</p>
-                                <img class="real" src="./img/real.svg" alt="real">
-                            </div>
-                            <p class="reserve-price">Reserve price</p>
-                            <div class="info-img__prise">
-                                <span class="icon etherium-icon"></span>
-                                <p class="prise__font-Orbitron">ETH 9.31</p>
-                                <p class="prise__font-Rajdhani">($29,8846)</p>
-                            </div>
-                        </div>
-                        <div class="info-img__right-block">
-                            <p class="right-block__title">Auction Ends in</p>
-                            <div class="right-block__timer">
-                                <div class="timer__hours">
-                                    <p class="timer__time">18</p>
-                                    <p class="timer__time-type">Hours</p>
-                                </div>
-                                <div class="timer__minutes">
-                                    <p class="timer__time">25</p>
-                                    <p class="timer__time-type">Mins</p>
-                                </div>
-                                <div class="timer__secunds">
-                                    <p class="timer__time">44</p>
-                                    <p class="timer__time-type">Secs</p>
-                                </div>
-                            </div>
-                            <div class="button-2 right-block__button">
-                                <a class="button-elements-2 auction-button" href="">Place Bid
-                                    <img class="arrow-button arrow-small" src="./img/arrow.svg" alt="">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="partners">
-                <div class="item-partners">
-                    <img class="partners-img" src="./img/Binance_logo logo.svg" alt="Binance">
-                </div>
-                <div class="item-partners">
-                    <img class="partners-img" src="./img/Ethereum logo.svg" alt="Ethereum">
-                </div>
-                <div class="item-partners">
-                    <img class="partners-img" src="./img/Logo_of_Blockchain.io logo.svg" alt="Blockchain">
-                </div>
-                <div class="item-partners">
-                    <img class="partners-img" src="./img/bitMex.png" alt="BitMex">
-                </div>
-            </div>
-        </div>
         </div>
     </section>
     <section class="top-nft">
         <div class="container">
-            <div class="info-section collections__info-section">
-                <div class="info-section__right-text">
-                    <p class="info-section__title">
-                        Top NFT’s now
-                    </p>
-                </div>
-                <div class="top_nft__left-text">
-                    <a href="#"><span>View all</span>
-                        <img class="small-arrow" src="./img/arrow.svg" alt="arrow">
-                    </a>
-                </div>
-            </div>
+            <div class="section-title collection-section__section-title">
+                <h2 class="section-title__text">Explore Collections</h2>
+                <a class="section-title__link" href="#">View all
+                <img src="./img/arrow.svg" alt="arrow">
+                </a>
+        </div>
             <div class="slider-top-nft">
                 <div class="swiper-wrapper">
                     <div class="nft-item swiper-slide">
                         <div class="nft-item__picture">
-                            <img class="nft-item__img" src="./img/Rectangle 22664 (2).png" alt="NFT">
+                            <img class="nft-item__img" src="./img/swiper-nft-1.png" alt="NFT">
                         </div>
-                        <div class="info-nft nft-item__info-nft">
-                            <div class="left-block-nft info-nft__left-block-nft">
-                                <p class="left-block-nft__title">3D Abstract Hand</p>
-                                <div class="seller-nft left-block-nft__seller-nft">
-                                    <img class="seller-nft__user-img" src="./img/Ellipse1.png" alt="user-img">
-                                    <p class="seller-nft__nick-name">@jhonartist</p>
-                                    <img class="seller-nft__real" src="./img/real.svg" alt="real">
+                        <div class="info-picture title-picture-block__info-picture">
+                            <div class="info-picture__left-block">
+                                <p class="info-picture__title-left-block">Apollo Eth #1289 NFT</p>
+                                <div class="info-picture__user-info">
+                                    <div class="info-picture__user-picture">
+                                        <img src="./img/user.svg" alt="user-img" class="info-picture__user-img">
+                                    </div>
+                                    <p class="user-nick-name">@jhonartist</p>
+                                    <div class="user-authentication info-picture__user-authentication">
+                                        <img src="./img/user-authentication.svg" alt="authentication"
+                                            class="user-authentication-img">
+                                    </div>
                                 </div>
-                                <p class="left-block-nft__price-title">Reserve price</p>
-                                <div class="price-nft left-block-nft__price-nft">
-                                    <span class="icon price-nft__crypto-icon"></span>
-                                    <p class="price-nft__price-crypto">ETH 9.31</p>
-                                    <p class="price-nft__price-money">($29,8846)</p>
+                                <p class="info-picture__title-prise">Reserve price</p>
+                                <div class="info-picture__price">
+                                    <span class="price__icon"></span>
+                                    <span class="price__crypto">
+                                        ETH 9.31
+                                    </span>
+                                    <span class="price__money">
+                                        ($29,8846)
+                                    </span>
                                 </div>
                             </div>
-                            <div class="right-block-nft info-nft__right-block-nft">
-                                <p class="right-block-nft__title">Auction Ends in</p>
-                                <div class="timer right-block-nft__timer">
-                                    <div class="timer__hours">
+                            <div class="info-picture__right-block">
+                                <p class="info-picture__title-right-block">Auction Ends in</p>
+                                <div class="info-picture__timer">
+                                    <div class="timer__item">
                                         <p class="timer__time">18</p>
-                                        <p class="timer__time-type">Hours</p>
+                                        <p class="timer__description">Hours</p>
                                     </div>
-                                    <div class="timer__minutes">
+                                    <div class="timer__item">
                                         <p class="timer__time">25</p>
-                                        <p class="timer__time-type">Mins</p>
+                                        <p class="timer__description">Mins</p>
                                     </div>
-                                    <div class="timer__secunds">
+                                    <div class="timer__item">
                                         <p class="timer__time">44</p>
-                                        <p class="timer__time-type">Secs</p>
+                                        <p class="timer__description">Secs</p>
                                     </div>
                                 </div>
-                                <a class="button-background" href="">Place Bid
-                                    <img class="button-background-img" src="./img/arrow.svg" alt="arrow">
+                                <a href="#" class="button button-radius">
+                                    <span>Place Bid</span>
+                                    <img class="arrow" src="./img/arrow-2.svg" alt="arrow">
                                 </a>
                             </div>
                         </div>
                     </div>
                     <div class="nft-item swiper-slide">
                         <div class="nft-item__picture">
-                            <img class="nft-item__img" src="./img/Rectangle 22665.png" alt="NFT">
+                            <img class="nft-item__img" src="./img/swiper-nft-2.png" alt="NFT">
                         </div>
-                        <div class="info-nft nft-item__info-nft">
-                            <div class="left-block-nft info-nft__left-block-nft">
-                                <p class="left-block-nft__title">Sassy Bull #1169 Art</p>
-                                <div class="seller-nft left-block-nft__seller-nft">
-                                    <img class="seller-nft__user-img" src="./img/Ellipse2.png" alt="user-img">
-                                    <p class="seller-nft__nick-name">@jhonartist</p>
-                                    <img class="seller-nft__real" src="./img/real.svg" alt="real">
+                        <div class="info-picture title-picture-block__info-picture">
+                            <div class="info-picture__left-block">
+                                <p class="info-picture__title-left-block">Sassy Bull #1169 Art</p>
+                                <div class="info-picture__user-info">
+                                    <div class="info-picture__user-picture">
+                                        <img src="./img/user.svg" alt="user-img" class="info-picture__user-img">
+                                    </div>
+                                    <p class="user-nick-name">@jhonartist</p>
+                                    <div class="user-authentication info-picture__user-authentication">
+                                        <img src="./img/user-authentication.svg" alt="authentication"
+                                            class="user-authentication-img">
+                                    </div>
                                 </div>
-                                <p class="left-block-nft__price-title">Reserve price</p>
-                                <div class="price-nft left-block-nft__price-nft">
-                                    <span class="icon price-nft__crypto-icon"></span>
-                                    <p class="price-nft__price-crypto">ETH 9.31</p>
-                                    <p class="price-nft__price-money">($29,8846)</p>
+                                <p class="info-picture__title-prise">Reserve price</p>
+                                <div class="info-picture__price">
+                                    <span class="price__icon"></span>
+                                    <span class="price__crypto">
+                                        ETH 9.31
+                                    </span>
+                                    <span class="price__money">
+                                        ($29,8846)
+                                    </span>
                                 </div>
                             </div>
-                            <div class="right-block-nft info-nft__right-block-nft">
-                                <p class="right-block-nft__title">Auction Ends in</p>
-                                <div class="timer right-block-nft__timer">
-                                    <div class="timer__hours">
+                            <div class="info-picture__right-block">
+                                <p class="info-picture__title-right-block">Auction Ends in</p>
+                                <div class="info-picture__timer">
+                                    <div class="timer__item">
                                         <p class="timer__time">09</p>
-                                        <p class="timer__time-type">Hours</p>
+                                        <p class="timer__description">Hours</p>
                                     </div>
-                                    <div class="timer__minutes">
+                                    <div class="timer__item">
                                         <p class="timer__time">15</p>
-                                        <p class="timer__time-type">Mins</p>
+                                        <p class="timer__description">Mins</p>
                                     </div>
-                                    <div class="timer__secunds">
+                                    <div class="timer__item">
                                         <p class="timer__time">23</p>
-                                        <p class="timer__time-type">Secs</p>
+                                        <p class="timer__description">Secs</p>
                                     </div>
                                 </div>
-                                <a class="button-background" href="">Place Bid
-                                    <img class="button-background-img" src="./img/arrow.svg" alt="arrow">
+                                <a href="#" class="button button-radius">
+                                    <span>Place Bid</span>
+                                    <img class="arrow" src="./img/arrow-2.svg" alt="arrow">
                                 </a>
                             </div>
                         </div>
                     </div>
                     <div class="nft-item swiper-slide">
                         <div class="nft-item__picture">
-                            <img class="nft-item__img" src="./img/Rectangle 22666.png" alt="NFT">
+                            <img class="nft-item__img" src="./img/swiper-nft-3.png" alt="NFT">
                         </div>
-                        <div class="info-nft nft-item__info-nft">
-                            <div class="left-block-nft info-nft__left-block-nft">
-                                <p class="left-block-nft__title">Satisfying 3D Art</p>
-                                <div class="seller-nft left-block-nft__seller-nft">
-                                    <img class="seller-nft__user-img" src="./img/Elipse3.png" alt="user-img">
-                                    <p class="seller-nft__nick-name">@jhonartist</p>
-                                    <img class="seller-nft__real" src="./img/real.svg" alt="real">
+                        <div class="info-picture title-picture-block__info-picture">
+                            <div class="info-picture__left-block">
+                                <p class="info-picture__title-left-block">3D Abstract Hand</p>
+                                <div class="info-picture__user-info">
+                                    <div class="info-picture__user-picture">
+                                        <img src="./img/user.svg" alt="user-img" class="info-picture__user-img">
+                                    </div>
+                                    <p class="user-nick-name">@jhonartist</p>
+                                    <div class="user-authentication info-picture__user-authentication">
+                                        <img src="./img/user-authentication.svg" alt="authentication"
+                                            class="user-authentication-img">
+                                    </div>
                                 </div>
-                                <p class="left-block-nft__price-title">Reserve price</p>
-                                <div class="price-nft left-block-nft__price-nft">
-                                    <span class="icon price-nft__crypto-icon"></span>
-                                    <p class="price-nft__price-crypto">ETH 9.31</p>
-                                    <p class="price-nft__price-money">($29,8846)</p>
+                                <p class="info-picture__title-prise">Reserve price</p>
+                                <div class="info-picture__price">
+                                    <span class="price__icon"></span>
+                                    <span class="price__crypto">
+                                        ETH 9.31
+                                    </span>
+                                    <span class="price__money">
+                                        ($29,8846)
+                                    </span>
                                 </div>
                             </div>
-                            <div class="right-block-nft info-nft__right-block-nft">
-                                <p class="right-block-nft__title">Auction Ends in</p>
-                                <div class="timer right-block-nft__timer">
-                                    <div class="timer__hours">
+                            <div class="info-picture__right-block">
+                                <p class="info-picture__title-right-block">Auction Ends in</p>
+                                <div class="info-picture__timer">
+                                    <div class="timer__item">
                                         <p class="timer__time">23</p>
-                                        <p class="timer__time-type">Hours</p>
+                                        <p class="timer__description">Hours</p>
                                     </div>
-                                    <div class="timer__minutes">
+                                    <div class="timer__item">
                                         <p class="timer__time">32</p>
-                                        <p class="timer__time-type">Mins</p>
+                                        <p class="timer__description">Mins</p>
                                     </div>
-                                    <div class="timer__secunds">
+                                    <div class="timer__item">
                                         <p class="timer__time">56</p>
-                                        <p class="timer__time-type">Secs</p>
+                                        <p class="timer__description">Secs</p>
                                     </div>
                                 </div>
-                                <a class="button-background" href="#">Place Bid
-                                    <img class="button-background-img" src="./img/arrow.svg" alt="arrow">
+                                <a href="#" class="button button-radius">
+                                    <span>Place Bid</span>
+                                    <img class="arrow" src="./img/arrow-2.svg" alt="arrow">
                                 </a>
                             </div>
                         </div>
@@ -289,33 +323,452 @@
             </div>
         </div>
     </section>
-    <section class="collections">
-        <div class="container">
-            <div class="show collections__show">
-                <div class="show__buttons">
-                    <div class="info-section collections__info-section grid-area-EC">
-                        <div class="info-section__right-text">
-                            <p class="info-section__title ">
-                                Explore Collections
-                            </p>
+    <section class="collection-picture-section">
+        <div class="container collection-picture-section__container">
+        
+        <div class="collection-picture-section__blocks">
+            <div class="section-title collection-picture-section__section-title-1">
+                <h2 class="section-title__text">Explore Collections</h2>
+            </div>
+            <div class="collection-picture-section__buttons">
+                    <a  href="./img/nft4.png" class="collection-picture-section__button btn">Photography</a>
+                    <a  href="./img/nft5.png" class="collection-picture-section__button btn">Brands</a>
+                    <a  href="./img/nft4.png" class="collection-picture-section__button btn">Art</a>
+                    <a  href="./img/nft5.png" class="collection-picture-section__button btn">Brands</a>
+                    <a  href="./img/nft4.png" class="collection-picture-section__button btn active">Sports</a>
+                    <a  href="./img/nft5.png" class="collection-picture-section__button btn">Collectibles</a>
+                    <a  href="./img/nft4.png" class="collection-picture-section__button btn">Utility</a>
+                    <a  href="./img/nft5.png" class="collection-picture-section__button btn">Collectibles</a>
+
+            </div>
+            <div class="section-title collection-picture-section__section-title-2">
+                <a class="section-title__link" href="#">View all
+                    <img src="./img/arrow.svg" alt="arrow">
+                    </a>
+            </div>
+        </div>
+        <div class="collection-picture-section__pictures">
+            <img class="collection-picture-section__img" src="./img/nft5.png" alt="">
+        </div>
+    </div>
+    </section>
+    <section class="collection-section">
+        <div class="container collection-section__container">
+            <div class="section-title collection-section__section-title">
+                    <h2 class="section-title__text">Explore Collections</h2>
+                    <a class="section-title__link" href="#">View all
+                    <img src="./img/arrow.svg" alt="arrow">
+                    </a>
+            </div>
+            <div class="slider-collection">
+                <div class="swiper-wrapper">
+                    <div class="slider-collection__item swiper-slide">
+                        <div class="slider-collection__pictures">
+                            <div class="slider-collection__background">
+                                <img src="./img/collection-slider-background.png" alt="background">
+                            </div>
+                            <div class="slider-collection__user-img">
+                                <img src="./img/user-1.png" alt="user-img">
+                            </div>
+                        </div>
+                        <div class="info-user-slider-collection slider-collection__info-user">
+                            <p class="info-user-slider-collection__name">Jhones Nickey</p>
+                            <div class="info-user-slider-collection__nick-name">
+                                <p class="nick-name">@jhonartist</p>
+                                <div class="authentication">
+                                    <img src="./img/user-authentication.svg" alt="auth" class="autentification-img">
+                                </div>
+                            </div>
+                            <div class="info-user-slider-collection__statistic">
+                                <div class="statistic__item">
+                                    <p class="numbers">125</p>
+                                    <p class="description">Folowers</p>
+                                </div>
+                                <div class="statistic__item">
+                                    <p class="numbers">256</p>
+                                    <p class="description">Following</p>
+                                </div>
+                                <div class="statistic__item">
+                                    <p class="numbers">129</p>
+                                    <p class="description">Artworks</p>
+                                </div>
+                            </div>
+                            <a class="button" href="#">Follow</a>
                         </div>
                     </div>
-                    <a class="show__button" href="./img/nft5.png">Photography</ф>
-                    <a class="show__button" href="./img/nft1.png">Sports</ф>
-                    <a class="show__button" href="#">Brands</ф>
-                    <a class="show__button" href="#">Collectibles</ф>
-                    <a class="show__button" href="#">Art</ф>
-                    <a class="show__button" href="#">Utility</ф>
-                    <a class="show__button" href="#">Brands</ф>
-                    <a class="show__button" href="#">Collectibles</ф>
-                    
+                    <div class="slider-collection__item swiper-slide">
+                        <div class="slider-collection__pictures">
+                            <div class="slider-collection__background">
+                                <img src="./img/collection-slider-background.png" alt="background">
+                            </div>
+                            <div class="slider-collection__user-img">
+                                <img src="./img/user-2.png" alt="user-img">
+                            </div>
+                        </div>
+                        <div class="info-user-slider-collection slider-collection__info-user">
+                            <p class="info-user-slider-collection__name">Cody Fisher</p>
+                            <div class="info-user-slider-collection__nick-name">
+                                <p class="nick-name">@codyfishe</p>
+                                <div class="authentication">
+                                    <img src="./img/user-authentication.svg" alt="auth" class="autentification-img">
+                                </div>
+                            </div>
+                            <div class="info-user-slider-collection__statistic">
+                                <div class="statistic__item">
+                                    <p class="numbers">356</p>
+                                    <p class="description">Folowers</p>
+                                </div>
+                                <div class="statistic__item">
+                                    <p class="numbers">456</p>
+                                    <p class="description">Following</p>
+                                </div>
+                                <div class="statistic__item">
+                                    <p class="numbers">89</p>
+                                    <p class="description">Artworks</p>
+                                </div>
+                            </div>
+                            <a class="button" href="#">Follow</a>
+                        </div>
+                    </div>
+                    <div class="slider-collection__item swiper-slide">
+                        <div class="slider-collection__pictures">
+                            <div class="slider-collection__background">
+                                <img src="./img/collection-slider-background.png" alt="background">
+                            </div>
+                            <div class="slider-collection__user-img">
+                                <img src="./img/user-3.png" alt="user-img">
+                            </div>
+                        </div>
+                        <div class="info-user-slider-collection slider-collection__info-user">
+                            <p class="info-user-slider-collection__name">Jerome Bell</p>
+                            <div class="info-user-slider-collection__nick-name">
+                                <p class="nick-name">@jeromebt</p>
+                                <div class="authentication">
+                                    <img src="./img/user-authentication.svg" alt="auth" class="autentification-img">
+                                </div>
+                            </div>
+                            <div class="info-user-slider-collection__statistic">
+                                <div class="statistic__item">
+                                    <p class="numbers">546</p>
+                                    <p class="description">Folowers</p>
+                                </div>
+                                <div class="statistic__item">
+                                    <p class="numbers">789</p>
+                                    <p class="description">Following</p>
+                                </div>
+                                <div class="statistic__item">
+                                    <p class="numbers">54</p>
+                                    <p class="description">Artworks</p>
+                                </div>
+                            </div>
+                            <a class="button" href="#">Follow</a>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </section>
+    <section class="top-sellers-section">
+        <div class="container top-sellers-section__container">
+            <div class="title-top-sellers top-sellers-section__title">
+                <p class="title-top-sellers__text">Top Sellers this
+                </p>
+                <a class="title-top-sellers__accordion accordion">Month</a>
+                <div class="panel">
+                    <p class="title-top-sellers__description">Amet minim mollit non deserunt ullamco est sit aliqua
+                        dolor do amet sint. Velit officia consequat duis enim minim mollit.</p>
                 </div>
-                <div class="show__pictures">
-                    <img class="show__img" src="./img/nft5.png" alt="collectionImg">
+
+                <ul class="list-top-sellers top-sellers-section__list">
+                    <li class="list-top-sellers__item">
+                        <div class="list-top-sellers__left-block">
+                            <div class="list-top-sellers__picture">
+                                <img src="./img/top-sellers-1.png" alt="top-seller-img" class="list-top-sellers__img">
+                            </div>
+                            <div class="list-top-sellers__name-balance">
+                                <p class="list-top-sellers__name">Eleanor Pena</p>
+                                <p class="list-top-sellers__balance"><span class="crypto-icon"></span> 74875</p>
+                            </div>
+                        </div>
+                        <p class="list-top-sellers__profit list-top-sellers__profit_color_green">
+                            +468.48%
+                        </p>
+                    </li>
+                    <li class="list-top-sellers__item">
+                        <div class="list-top-sellers__left-block">
+                            <div class="list-top-sellers__picture">
+                                <img src="./img/top-sellers-2.png" alt="top-seller-img" class="list-top-sellers__img">
+                            </div>
+                            <div class="list-top-sellers__name-balance">
+                                <p class="list-top-sellers__name">Savannah Nguyen</p>
+                                <p class="list-top-sellers__balance"><span class="crypto-icon"></span> 18599</p>
+                            </div>
+                        </div>
+                        <p class="list-top-sellers__profit list-top-sellers__profit_color_red">
+                            +468.48%
+                        </p>
+                    </li>
+                    <li class="list-top-sellers__item">
+                        <div class="list-top-sellers__left-block">
+                            <div class="list-top-sellers__picture">
+                                <img src="./img/top-sellers-3.png" alt="top-seller-img" class="list-top-sellers__img">
+                            </div>
+                            <div class="list-top-sellers__name-balance">
+                                <p class="list-top-sellers__name">Arlene McCoy</p>
+                                <p class="list-top-sellers__balance"><span class="crypto-icon"></span> 45904</p>
+                            </div>
+                        </div>
+                        <p class="list-top-sellers__profit list-top-sellers__profit_color_green">
+                            +468.48%
+                        </p>
+                    </li>
+                    <li class="list-top-sellers__item">
+                        <div class="list-top-sellers__left-block">
+                            <div class="list-top-sellers__picture">
+                                <img src="./img/top-sellers-4.png" alt="top-seller-img" class="list-top-sellers__img">
+                            </div>
+                            <div class="list-top-sellers__name-balance">
+                                <p class="list-top-sellers__name">Esther Howard</p>
+                                <p class="list-top-sellers__balance"><span class="crypto-icon"></span> 16627</p>
+                            </div>
+                        </div>
+                        <p class="list-top-sellers__profit list-top-sellers__profit_color_red">
+                            +468.48%
+                        </p>
+                    </li>
+                    <li class="list-top-sellers__item">
+                        <div class="list-top-sellers__left-block">
+                            <div class="list-top-sellers__picture">
+                                <img src="./img/top-sellers-5.png" alt="top-seller-img" class="list-top-sellers__img">
+                            </div>
+                            <div class="list-top-sellers__name-balance">
+                                <p class="list-top-sellers__name">Robert Fox</p>
+                                <p class="list-top-sellers__balance"><span class="crypto-icon"></span> 9631</p>
+                            </div>
+                        </div>
+                        <p class="list-top-sellers__profit list-top-sellers__profit_color_green">
+                            +468.48%
+                        </p>
+                    </li>
+                    <li class="list-top-sellers__item">
+                        <div class="list-top-sellers__left-block">
+                            <div class="list-top-sellers__picture">
+                                <img src="./img/top-sellers-6.png" alt="top-seller-img" class="list-top-sellers__img">
+                            </div>
+                            <div class="list-top-sellers__name-balance">
+                                <p class="list-top-sellers__name">Darlene Robertson</p>
+                                <p class="list-top-sellers__balance"><span class="crypto-icon"></span> 70443</p>
+                            </div>
+                        </div>
+                        <p class="list-top-sellers__profit list-top-sellers__profit_color_green">
+                            +468.48%
+                        </p>
+                    </li>
+                    <li class="list-top-sellers__item">
+                        <div class="list-top-sellers__left-block">
+                            <div class="list-top-sellers__picture">
+                                <img src="./img/top-sellers-7.png" alt="top-seller-img" class="list-top-sellers__img">
+                            </div>
+                            <div class="list-top-sellers__name-balance">
+                                <p class="list-top-sellers__name">Jacob Jones</p>
+                                <p class="list-top-sellers__balance"><span class="crypto-icon"></span> 13671</p>
+                            </div>
+                        </div>
+                        <p class="list-top-sellers__profit list-top-sellers__profit_color_green">
+                            +468.48%
+                        </p>
+                    </li>
+                    <li class="list-top-sellers__item">
+                        <div class="list-top-sellers__left-block">
+                            <div class="list-top-sellers__picture">
+                                <img src="./img/top-sellers-8.png" alt="top-seller-img" class="list-top-sellers__img">
+                            </div>
+                            <div class="list-top-sellers__name-balance">
+                                <p class="list-top-sellers__name">Jerome Bell</p>
+                                <p class="list-top-sellers__balance"><span class="crypto-icon"></span> 39235</p>
+                            </div>
+                        </div>
+                        <p class="list-top-sellers__profit list-top-sellers__profit_color_green">
+                            +468.48%
+                        </p>
+                    </li>
+                    <li class="list-top-sellers__item">
+                        <div class="list-top-sellers__left-block">
+                            <div class="list-top-sellers__picture">
+                                <img src="./img/top-sellers-9.png" alt="top-seller-img" class="list-top-sellers__img">
+                            </div>
+                            <div class="list-top-sellers__name-balance">
+                                <p class="list-top-sellers__name">Wade Warren</p>
+                                <p class="list-top-sellers__balance"><span class="crypto-icon"></span> 43359</p>
+                            </div>
+                        </div>
+                        <p class="list-top-sellers__profit list-top-sellers__profit_color_red">
+                            +468.48%
+                        </p>
+                    </li>
+                    <li class="list-top-sellers__item">
+                        <div class="list-top-sellers__left-block">
+                            <div class="list-top-sellers__picture">
+                                <img src="./img/top-sellers-10.png" alt="top-seller-img" class="list-top-sellers__img">
+                            </div>
+                            <div class="list-top-sellers__name-balance">
+                                <p class="list-top-sellers__name">Jane Cooper</p>
+                                <p class="list-top-sellers__balance"><span class="crypto-icon"></span> 95554</p>
+                            </div>
+                        </div>
+                        <p class="list-top-sellers__profit list-top-sellers__profit_color_red">
+                            +468.48%
+                        </p>
+                    </li>
+                    <li class="list-top-sellers__item">
+                        <div class="list-top-sellers__left-block">
+                            <div class="list-top-sellers__picture">
+                                <img src="./img/top-sellers-11.png" alt="top-seller-img" class="list-top-sellers__img">
+                            </div>
+                            <div class="list-top-sellers__name-balance">
+                                <p class="list-top-sellers__name">Kristin Watson</p>
+                                <p class="list-top-sellers__balance"><span class="crypto-icon"></span> 20796</p>
+                            </div>
+                        </div>
+                        <p class="list-top-sellers__profit list-top-sellers__profit_color_green">
+                            +468.48%
+                        </p>
+                    </li>
+                    <li class="list-top-sellers__item">
+                        <div class="list-top-sellers__left-block">
+                            <div class="list-top-sellers__picture">
+                                <img src="./img/top-sellers-12.png" alt="top-seller-img" class="list-top-sellers__img">
+                            </div>
+                            <div class="list-top-sellers__name-balance">
+                                <p class="list-top-sellers__name">Kathryn Murphy</p>
+                                <p class="list-top-sellers__balance"><span class="crypto-icon"></span> 4339</p>
+                            </div>
+                        </div>
+                        <p class="list-top-sellers__profit list-top-sellers__profit_color_red">
+                            +468.48%
+                        </p>
+                    </li>
+                </ul>
+                <button class="button top-sellers-section__button">Explore all</button>
+            </div>
+        </div>
+    </section>
+    <section class="nft-info-section">
+        <img class="nft-info-section__background" src="./img/nft-info-background.png" alt="background">
+        <div class="container nft-info-section__container">
+            <div class="info-block-nft nft-info-section__info-block">
+                <h2 class="info-block-nft__title">What are NFT’s ?</h2>
+                <p class="info-block-nft__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Interdum
+                    quis amet, faucibus lorem. Lectus amet odio quis sed adipiscing adipiscing magna non. Nullam turpis
+                    faucibus ridiculus suscipit. Et blandit suspendisse curabitur eu congue dui ut.</p>
+                <div class="info-block-nft__links">
+                    <a class="info-block-nft__link" href="#">Learn more</a>
+                    <a class="info-block-nft__link" href="#">Watch video</a>
                 </div>
             </div>
         </div>
     </section>
+    <section class="subscribe-section">
+        <div class="container subscribe-section__container">
+            <div class="subscribe-section__subscribe-picture">
+            <img src="./img/subscribe-section-img.png" alt="subscribe-section-img" class="subscribe-section__img">
+        </div>
+            <form class="subscribe-section__form">
+                <h2 class="subscribe-section__title">Subscribe to us</h2>
+                <p class="subscribe-section__description">
+                    Specially developed to help restore a more youthful appearance with improved radiance and bounce.
+                </p>
+                <div class="subscribe-section__inputs">
+                <input class="subscribe-section__input" placeholder="Your work email address" type="text">
+                <a class="subscribe-section__submit" href="">Subscribe</a>
+            </div>
+            </form>
+        </div>
+    </section>
+    <section class="links-section">
+        <div class="container links-section__container">
+            <div class="links-section__block">
+                <div class="logo links-section__logo">
+                    <a href="#">
+                        <span>Ocean</span>NFT
+                    </a>
+                </div>
+                <p class="links-section__description">
+                    Lorem ipsum dolor amet, consectetur adipiscing elit. Eget nisl nunc quam ac sed turpis volutpat. Cursus sed massa non nisi, placerat.
+                </p>
+                <div class="social">
+                    <a href="https://www.instagram.com/" class="social__link"></a>
+                    <a href="#" class="social__link"></a>
+                    <a href="https://twitter.com/" class="social__link"></a>
+                    <a href="https://www.youtube.com/" class="social__link"></a>
+                </div>
+            </div>
+            <div class="links-section__links">
+            <div class="block-accordeon links-section__block-accordeon">
+                <a class="block-accordeon__title accordion">Market place</a>
+                <div class="panel">
+                    <a href="#" class="accordeon-link">Overview</a>
+                    <a href="#" class="accordeon-link">Features <span class="new">new</span></a>
+                    <a href="#" class="accordeon-link">Tutorials</a>
+                    <a href="#" class="accordeon-link">Pricing</a>
+                    <a href="#" class="accordeon-link">Releases</a>
+                </div>
+            </div>
+            <div class="block-accordeon links-section__block-accordeon">
+                <a class="block-accordeon__title accordion">Collectibles</a>
+                <div class="panel">
+                    <a href="#" class="accordeon-link">About</a>
+                    <a href="#" class="accordeon-link">Press</a>
+                    <a href="#" class="accordeon-link">Careers</a>
+                    <a href="#" class="accordeon-link">Contact</a>
+                    <a href="#" class="accordeon-link">Partners</a>
+                </div>
+            </div>
+            <div class="block-accordeon links-section__block-accordeon">
+                <a class="block-accordeon__title accordion">Support</a>
+                <div class="panel">
+                    <a href="#" class="accordeon-link">Help Center</a>
+                    <a href="#" class="accordeon-link">Safety Center</a>
+                    <a href="#" class="accordeon-link">Legal</a>
+                    <a href="#" class="accordeon-link">Privacy policy</a>
+                    <a href="#" class="accordeon-link">Status</a>
+                </div>
+            </div>
+            <div class="block-accordeon links-section__block-accordeon">
+                <a class="block-accordeon__title accordion">Legal</a>
+                <div class="panel">
+                    <a href="#" class="accordeon-link">Cookies Policy</a>
+                    <a href="#" class="accordeon-link">Privacy Policy</a>
+                    <a href="#" class="accordeon-link">Terms of Service</a>
+                    <a href="#" class="accordeon-link">Law Enforcement</a>
+                    <a href="#" class="accordeon-link">Status</a>
+                </div>
+            </div>
+            <div class="block-accordeon links-section__block-accordeon">
+                <a class="block-accordeon__title accordion">Follow us</a>
+                <div class="panel">
+                    <a href="#" class="accordeon-link">Facebook</a>
+                    <a href="#" class="accordeon-link">Twitter</a>
+                    <a href="#" class="accordeon-link">Dribbble</a>
+                    <a href="#" class="accordeon-link">Instagram</a>
+                    <a href="#" class="accordeon-link">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="left-block-footer footer__left-block">
+                <p class="left-block-footer__text">© 2020 Landify UI Kit. All rights reserved</p>
+            </div>
+            <div class="footer__right-block">
+                <a class="footer__link" href="#">Terms & Conditions</a>
+                <a class="footer__link" href="#">Privacy Policy</a>
+                <a class="footer__link" href="#">Sitemap</a>
+            </div>
+        </div>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="./js/script.js"></script>

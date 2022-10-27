@@ -47,3 +47,33 @@
   src: url(../fonts/Rajdhani-SemiBold.ttf);
   font-weight: 600;
 }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url(../fonts/Roboto-Medium.ttf);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url(../fonts/Roboto-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url(../fonts/Inter-ExtraBold.ttf);
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url(../fonts/Inter-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'MuseoModerno';
+  src: url(../fonts/MuseoModerno-Regular.ttf);
+  font-weight: 400;
+}

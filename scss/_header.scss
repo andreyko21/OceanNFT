@@ -1,0 +1,158 @@
+.header {
+    &__logo{
+        &::before{
+            margin-right: -5px;
+        }
+    }
+    z-index: 6;
+    @include padding-top-bottom(40px, 10px);
+    &.fixed {
+        @include padding-top-bottom(10px, 10px);
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        background: $header-fixed-background;
+        transition: all 0.9s ease 0s;
+    }
+    @media screen and (max-width: $tablet-width) {
+        @include padding-top-bottom(10px, 10px);
+        &.active {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background-color: $body-background;
+            overflow: scroll;
+        }
+    }
+    &__container {
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            @media screen and (max-width: $tablet-width) {
+                flex-direction: column;
+            }
+            &__phone-menu {
+                display: flex;
+                flex: 0 0 30%;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .menu-list {
+                position: relative;
+                flex: 0 0 70%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                @media screen and (max-width: $tablet-width) {
+                    &.active {
+                        transform: translate(0);
+                        position: relative;
+                    }
+                }
+                @media screen and (max-width: $tablet-width) {
+                    flex-direction: column;
+                    transform: translate(-200%, 0);
+                    position: absolute;
+                }
+            }
+            .burger-menu {
+                display: none;
+                position: relative;
+                min-width: 22px;
+                min-height: 20px;
+                cursor: pointer;
+                &::after,
+                &::before,
+                span {
+                    right: 0;
+                    position: absolute;
+                    height: 10%;
+                    transition: all 0.3 ease 0s;
+                    background-color: #ffffff;
+                }
+
+                &::after,
+                &::before {
+                    width: 100%;
+                    content: "";
+                    transition: all 0.3s ease 0s;
+                }
+
+                &::after {
+                    bottom: 0;
+                }
+
+                &::before {
+                    top: 0;
+                }
+
+                span {
+                    width: 65%;
+                    top: 50%;
+                    transform: translate(0px, -50%);
+                    transition: all 0.3s ease 0s;
+                }
+                @media screen and (max-width: $tablet-width) {
+                    display: block;
+                }
+                &.active {
+                    &::before {
+                        transform: rotate(45deg);
+                        top: 50%;
+                    }
+                    &::after {
+                        transform: rotate(-45deg);
+                        bottom: 50%;
+                    }
+                    span {
+                        transform: scale(0);
+                    }
+                }
+            }
+            .menu {
+                flex: 0 0 60%;
+                display: flex;
+                justify-content: space-between;
+                max-width: 460px;
+                @media screen and (max-width: $tablet-width) {
+                    flex-direction: column;
+                    text-align: center;
+                }
+                .menu__link {
+                    display: block;
+                    flex: 0 0 20%;
+                    @include font-Orbitron(700);
+                    color: $color-1;
+                    opacity: $opacity-1;
+
+                    &:hover {
+                        opacity: 1;
+                        transition: all 0.3s ease 0s;
+                    }
+                    @media screen and (max-width: $tablet-width) {
+                        padding: 10px;
+                    }
+                }
+            }
+            .right-menu.nav__right-menu {
+                max-width: 100px;
+                flex: 0 0 15%;
+                display: flex;
+                justify-content: space-between;
+                .nav__link {
+                    flex: 0 0 50%;
+                    max-width: 30px;
+                    max-height: 30px;
+                    @media screen and (max-width: $tablet-width) {
+                        position: relative;
+                        padding: 10px;
+                        text-align: center;
+                        margin-right: 10px;
+                        right: 5px;
+                    }
+                }
+            }
+        }
+    }
+}

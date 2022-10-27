@@ -1,0 +1,53 @@
+@import "_func";
+@import "_elements";
+@import "_info-picture";
+@import "_header";
+@import "_first-section";
+@import "_slider-collection";
+@import "_list-top-seller";
+@import "_nft-info";
+@import "_subscribe";
+@import "_links-section";
+@import "_footer";
+@import "_collection-picture";
+
+.body {
+    position: relative;
+    &::before{
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: url(../img/body-background.png);
+        background-size: cover;
+        z-index: -2;
+    }
+    &::after{
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(32, 8, 59);
+        opacity: 0.75;
+        z-index: -1;
+        
+    
+    }
+    font-size: 16px;
+    a {
+        color: $color-1;
+    }
+    color: $color-1;
+    @media screen and (max-width: $tablet-width) {
+        &.lock {
+            overflow: hidden;
+        }
+    }
+
+    
+}
+

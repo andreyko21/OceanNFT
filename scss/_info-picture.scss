@@ -1,0 +1,132 @@
+.info-picture {
+    padding: 35px 30px 25px 25px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 438px;
+    border: 2px solid;
+    border-image-source: linear-gradient(145.77deg, rgba(255, 255, 255, 0.28) 0%, rgba(255, 255, 255, 0) 105.76%);
+    border-image-slice: 1;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) -1.52%, rgba(255, 255, 255, 0.024) 104.35%);
+    @media screen and (max-width: 600px) {
+        padding: 24px 13px 18px 13px;
+    }
+    &__right-block {
+        @include font-Rajdhani(600);
+    }
+    .info-picture__title-left-block {
+        @include font-Rajdhani(700);
+        font-size: 17.6873px;
+        line-height: 35px;
+        @media screen and (max-width: 600px) {
+            font-size: 13.6006px;
+            line-height: 27px;
+        }
+    }
+    .info-picture__user-info {
+        display: flex;
+        align-items: center;
+        margin-top: 5px;
+        .info-picture__user-picture {
+            @media screen and (max-width: 600px) {
+                max-width: 26px;
+                max-height: 26px;
+            }
+        }
+        .user-nick-name {
+            margin-left: 3.3px;
+            @include font-Rajdhani(600);
+            font-size: 15.4764px;
+            line-height: 35px;
+            @media screen and (max-width: 600px) {
+                font-size: 11.9006px;
+                line-height: 27px;
+            }
+        }
+        .user-authentication.info-picture__user-authentication {
+            margin-left: 3.3px;
+            max-width: 15px;
+            max-height: 15px;
+        }
+        .info-picture__user-img {
+            @extend %img;
+        }
+        .user-authentication-img {
+            @extend %img;
+        }
+    }
+    .info-picture__title-prise {
+        @include font-Rajdhani(600);
+        font-size: 11.0546px;
+        line-height: 35px;
+        opacity: 0.7;
+        @media screen and (max-width: 600px) {
+            margin-top: 9px;
+            font-size: 8.5004px;
+            line-height: 27px;
+        }
+    }
+    .info-picture__price {
+        display: flex;
+        align-items: center;
+        .price__icon {
+            &:before {
+                font-family: "icomoon";
+                content: "\e901";
+                @media screen and (max-width: 600px) {
+                    font-size: 17px;
+                }
+            }
+        }
+
+        .price__crypto {
+            @include font-Orbitron(700);
+            font-size: 9.71776px;
+            line-height: 12px;
+            @media screen and (max-width: 600px) {
+                font-size: 7.47244px;
+                line-height: 9px;
+            }
+        }
+
+        .price__money {
+            @include font-Rajdhani(400);
+            font-size: 11.0546px;
+            line-height: 35px;
+            margin-left: 5.5px;
+            opacity: 0.7;
+            @media screen and (max-width: 600px) {
+                font-size: 8.5004px;
+                line-height: 27px;
+            }
+        }
+    }
+    .info-picture__title-right-block {
+        font-size: 11.0546px;
+        line-height: 35px;
+        opacity: 0.7;
+        @media screen and (max-width: 600px) {
+            font-size: 8.5004px;
+            line-height: 27px;
+        }
+    }
+    .info-picture__timer {
+        display: flex;
+        justify-content: space-between;
+        .timer__time {
+            font-size: 17.6873px;
+            line-height: 20px;
+            @media screen and (max-width: 600px) {
+                font-size: 13.6006px;
+                line-height: 17px;
+            }
+        }
+        .timer__description {
+            font-size: 11.0546px;
+            line-height: 15px;
+            @media screen and (max-width: 600px) {
+                font-size: 8.5004px;
+                line-height: 27px;
+            }
+        }
+    }
+}
