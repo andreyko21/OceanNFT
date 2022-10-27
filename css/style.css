@@ -705,10 +705,7 @@
 @media screen and (max-width: 600px) {
   .first-section__container .title-picture-block__info-picture-border .info-picture {
     max-height: 400px;
-<<<<<<< HEAD
     width: auto;
-=======
->>>>>>> 772e3555aecb262e841fd4bd0d3602053036fe43
   }
 }
 .first-section .first-section__partners {
