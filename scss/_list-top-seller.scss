@@ -1,0 +1,214 @@
+.top-sellers-section {
+    padding-top: 160px;
+    padding-bottom: 160px;
+    @media screen and (max-width: 1100px) {
+        padding-top: 70px;
+        padding-bottom: 100px;
+    }
+    &__container {
+        .title-top-sellers {
+            margin-top: 20px;
+            text-align: center;
+            &__text {
+                display: inline-block;
+                @include font-Orbitron(700);
+                font-size: 26.531px;
+                line-height: 33px;
+                @media screen and (max-width: 600px) {
+                    font-size: 19.2314px;
+                    line-height: 24px;
+                }
+            }
+            &__accordion {
+                color: #ff56f6;
+                cursor: pointer;
+                display: inline-block;
+                font-size: 26.531px;
+                line-height: 33px;
+                @include font-Orbitron(700);
+                &::after {
+                    margin-left: 5px;
+                    display: inline-block;
+                    width: 10px;
+                    height: 10px;
+                    font-family: "icomoon";
+                    content: "\e907";
+                    font-size: 8px;
+                    line-height: 12px;
+                    transform: rotate(270deg);
+                }
+                &.active {
+                    &::after {
+                        margin-left: 5px;
+                        display: inline-block;
+                        font-family: "icomoon";
+                        content: "\e907";
+                        font-size: 8px;
+                        line-height: 14px;
+                        transform: rotate(360deg);
+                    }
+                }
+            }
+            .panel {
+                @include font-Roboto(400);
+                font-size: 17.6873px;
+                line-height: 25px;
+                margin: auto;
+                margin-top: 23px;
+                max-height: 0;
+                overflow: hidden;
+                max-width: 500px;
+                @media screen and (max-width: 600px) {
+                    font-size: 14px;
+                    line-height: 140.19%;
+                }
+            }
+            .block {
+                height: 600px;
+            }
+
+            .list-top-sellers {
+                margin-top: 40px;
+                display: grid;
+                grid-template:
+                    "item item item"
+                    "item item item"
+                    "item item item"
+                    "item item item";
+                grid-gap: 34px;
+                @media screen and (max-width: 1300px) {
+                    grid-template:
+                        "item item"
+                        "item item"
+                        "item item"
+                        "item item"
+                        "item item"
+                        "item item";
+                }
+                @media screen and (max-width: 900px) {
+                    grid-template:
+                        "item"
+                        "item"
+                        "item"
+                        "item";
+                }
+                @media screen and (max-width: 600px) {
+                    grid-gap: 24px;
+                    margin-top: 15px;
+                }
+                &__item {
+                    counter-increment: list-top-seller;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    position: relative;
+                    padding: 30px 23px 30px 33px;
+                    @include font-Roboto(500);
+                    &::after {
+                        @include border-gradient(3px, 29px, $border-gradient);
+                    }
+                    @media screen and (max-width: 900px) {
+                        &:nth-child(n + 5) {
+                            display: none;
+                        }
+                    }
+                    @media screen and (max-width: 600px) {
+                        padding: 16px 10px;
+                    }
+                }
+                &__left-block {
+                    display: flex;
+                    align-items: center;
+                    &::before {
+                        content: counter(list-top-seller);
+                        color: $color-list-top-sellers-op;
+                        font-size: 19.0479px;
+                        line-height: 44px;
+                        margin-right: 17px;
+                        @media screen and (max-width: 600px) {
+                            margin-right: 6px;
+                        }
+                    }
+                }
+                .list-top-sellers__picture {
+                    margin-right: 14px;
+                    max-width: 70px;
+                    max-height: 70px;
+                    @media screen and (max-width: 600px) {
+                        max-width: 50px;
+                        margin-right: 6px;
+                    }
+                    .list-top-sellers__img {
+                        @extend %img;
+                    }
+                }
+                .list-top-sellers__name-balance {
+                    display: flex;
+                    flex-direction: column;
+                    .list-top-sellers__name {
+                        font-size: 19.0479px;
+                        line-height: 24px;
+                        margin-bottom: 15px;
+                        @media screen and (max-width: 600px) {
+                            font-size: 13.8072px;
+                            line-height: 32px;
+                            margin-bottom: 0px;
+                        }
+                    }
+                    .list-top-sellers__balance {
+                        display: flex;
+                        color: $color-list-top-sellers-op;
+                        font-size: 13.7568px;
+                        line-height: 14px;
+                        @media screen and (max-width: 600px) {
+                            font-size: 9.97186px;
+                            line-height: 32px;
+                        }
+                    }
+                    .crypto-icon {
+                        &::before {
+                            font-family: "icomoon";
+                            content: "\e901";
+                            font-size: 20.7568px;
+                            @media screen and (max-width: 600px) {
+                                font-size: 10px;
+                            }
+                        }
+                    }
+                }
+                .list-top-sellers__profit {
+                    position: relative;
+                    display: block;
+                    text-align: center;
+                    @media screen and (max-width: 600px) {
+                        font-size: 10.6564px;
+                        line-height: 34px;
+                        padding: 2px 10px;
+                    }
+                    border-radius: 17px;
+                    padding: 7px 16px;
+                    &_color_red {
+                        background: rgba(235, 20, 20, 0.25);
+                        color: #ff0000;
+                        &::before {
+                            @include border-gradient(2px, 17px, $red-gradient);
+                        }
+                    }
+                    &_color_green {
+                        background: linear-gradient(0deg, rgba(0, 179, 71, 0.15), rgba(0, 179, 71, 0.15));
+                        color: #00ff66;
+                        &::before {
+                            @include border-gradient(2px, 17px, $green-gradient);
+                        }
+                    }
+                }
+            }
+            .button.top-sellers-section__button {
+                margin-top: 72px;
+                margin-left: auto;
+                margin-right: auto;
+                padding: 11px 74px;
+            }
+        }
+    }
+}

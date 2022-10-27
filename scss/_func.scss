@@ -1,0 +1,101 @@
+$header-fixed-background: rgba(36, 16, 67, 0.9);
+
+$body-background: #01204c;
+
+$clip-vertical: polygon(16% 0%, 100% 0, 100% 24%, 100% 72%, 84% 100%, 0 100%, 0% 85%, 0 26%);
+
+$tablet-width: 768px;
+
+$opacity-1: 0.7;
+
+$color-1: #ffffff;
+
+$color-list-top-sellers-op:rgba(255, 255, 255, 0.8);
+
+$border-gradient: linear-gradient(145.77deg, rgba(255, 255, 255, 0.28) 0%, rgba(255, 255, 255, 0) 105.76%);
+
+$green-gradient: linear-gradient(262.58deg, rgba(0, 179, 71, 0.72) -7.49%, rgba(73, 182, 73, 0) 123.89%);
+
+$red-gradient: linear-gradient(262.58deg, rgba(179, 0, 0, 0.72) -7.49%, rgba(182, 73, 73, 0) 123.89%);
+
+$bottom-border-gradient: linear-gradient(272.52deg, #FFA6FA 47.49%, #3C79D5 98.81%);
+
+$button-background: linear-gradient(92.23deg, #FF56F6 21.43%, #B936EE 50.63%, #3BACE2 100%, #406AFF 117.04%),
+linear-gradient(272.52deg, #FFA6FA 47.49%, #3C79D5 98.81%);
+
+$button-background-reverse: linear-gradient(-92.23deg, #FF56F6 21.43%, #B936EE 50.63%, #3BACE2 100%, #406AFF 117.04%),
+linear-gradient(272.52deg, #FFA6FA 47.49%, #3C79D5 98.81%);
+
+@mixin font-Orbitron($fw) {
+    font-family: "Orbitron";
+    font-style: normal;
+    font-weight: $fw;
+}
+
+@mixin font-Spartan($fw) {
+    font-family: "Spartan";
+    font-style: normal;
+    font-weight: $fw;
+}
+@mixin font-Rajdhani($fw) {
+    font-family: "Rajdhani";
+    font-style: normal;
+    font-weight: $fw;
+}
+
+@mixin font-Aldrich($fw) {
+    font-family: "Aldrich";
+    font-style: normal;
+    font-weight: $fw;
+}
+
+@mixin font-Alethia-Next($fw) {
+    font-family: "Alethia Next";
+    font-style: normal;
+    font-weight: $fw;
+}
+
+@mixin font-Roboto($fw) {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: $fw;
+}
+
+@mixin font-Inter($fw) {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: $fw;
+}
+
+@mixin font-MuseoModerno($fw) {
+    font-family: "MuseoModerno";
+    font-style: normal;
+    font-weight: $fw;
+}
+
+@mixin font-line($fs, $lh) {
+    font-size: $fs;
+    line-height: $lh;
+}
+
+@mixin padding-top-bottom($pt, $pb) {
+    padding-top: $pt;
+    padding-bottom: $pb;
+}
+
+@mixin border-gradient($bs, $br, $bg) {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: $br;
+    padding: $bs;
+    background: $bg;
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+}
+
+%img {
+    width: 100%;
+    height: 100%;
+}

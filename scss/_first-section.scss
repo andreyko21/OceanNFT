@@ -1,0 +1,226 @@
+.first-section {
+    padding-top: 100px;
+    @media screen and (max-width: 600px) {
+        padding-top: 40px;
+    }
+    &__container {
+        display: grid;
+        grid-template:
+            "title-text title-picture"
+            "partners partners";
+        @media screen and (max-width: 1100px) {
+            grid-template:
+                "title-text"
+                "partners"
+                "title-picture";
+        }
+        .title-text-block {
+            grid-area: title-text;
+            @media screen and (max-width: 1100px) {
+                margin: auto;
+            }
+            &__title-page {
+                @include font-Spartan(600);
+                font-size: 66.3276px;
+                line-height: 137.4%;
+                max-width: 847px;
+                @media screen and (max-width: 1100px) {
+                    max-width: 760px;
+                }
+                @media screen and (max-width: 600px) {
+                    font-size: 42px;
+                    line-height: 137.4%;
+                }
+            }
+            &__description {
+                margin-top: 20px;
+                @include font-Rajdhani(400);
+                font-size: 26.531px;
+                line-height: 44px;
+                max-width: 657px;
+                @media screen and (max-width: 600px) {
+                    font-size: 14px;
+                    line-height: 23px;
+                }
+            }
+            &__buttons {
+                margin-top: 43px;
+                display: flex;
+                align-items: center;
+            }
+            &__info-title-text-block-nft {
+                margin-top: 68px;
+                display: flex;
+                max-width: 479px;
+                justify-content: space-between;
+                @media screen and (max-width: 600px) {
+                    margin: auto;
+                    margin-top: 40px;
+                }
+            }
+            .button-vertical {
+                display: block;
+                clip-path: $clip-vertical;
+                width: fit-content;
+                padding: 2px;
+                background: linear-gradient(90deg, #ffa6fa 47.49%, #3c79d5 98.81%);
+                color: $color-1;
+                @include font-Orbitron(700);
+                font-size: 19.8983px;
+                line-height: 25px;
+                
+                &:hover .button-vertical__background {
+                    background: linear-gradient(90deg, #ff56f6 21.43%, #b936ee 50.63%, #3bace2 100%, #406aff 117.04%);
+                }
+                &__background {
+                    display: flex;
+                    justify-content: center;
+                    clip-path: $clip-vertical;
+                    background: linear-gradient(270deg, #ff56f6 21.43%, #b936ee 50.63%, #3bace2 100%, #406aff 117.04%);
+                    .arrow {
+                        margin-left: 11px;
+                        @media screen and (max-width: 600px) {
+                            width: 27px;
+                        }
+                    }
+                    padding: 19px 32px 19px 67px;
+                    @media screen and (max-width: 600px) {
+                        font-size: 12px;
+                        line-height: 15px;
+                        padding: 9px 18px 12px 28px;
+                    }
+                }
+            }
+            .button-text {
+                margin-left: 37px;
+                @include font-Orbitron(700);
+                @extend .gradient-reverse;
+                font-size: 19.8983px;
+                line-height: 25px;
+                &:hover {
+                    @extend .gradient;
+                }
+                @media screen and (max-width: 600px) {
+                    font-size: 12px;
+                    line-height: 15px;
+                    margin-left: 20px;
+                }
+            }
+            .info-title-text-block-nft__item {
+                position: relative;
+                .title-info {
+                    @include font-Aldrich(400);
+                    font-size: 39.7965px;
+                    line-height: 53px;
+                    @media screen and (max-width: 600px) {
+                        font-size: 18px;
+                        line-height: 28px;
+                    }
+                }
+                .description-info {
+                    @include font-Alethia-Next(400);
+                    font-size: 17.6873px;
+                    line-height: 22px;
+                    @media screen and (max-width: 600px) {
+                        font-size: 12px;
+                        line-height: 12px;
+                    }
+                }
+                &:nth-child(2)::before,
+                &:nth-child(4)::after {
+                    content: "";
+                    position: absolute;
+                    width: 1px;
+                    height: 63px;
+                    background-color: rgba(255, 255, 255, 0.26);
+                    top: 10%;
+                    @media screen and (max-width: 600px) {
+                        display: none;
+                    }
+                }
+            }
+        }
+        .title-picture-block {
+            grid-area: title-picture;
+            @media screen and (max-width: 1100px) {
+                margin-top: 100px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            &__picture {
+                filter: drop-shadow(0px 4.42184px 4.42184px rgba(0, 0, 0, 0.25))
+                    drop-shadow(0px 4.42184px 4.42184px rgba(0, 0, 0, 0.25))
+                    drop-shadow(0px 4.42184px 4.42184px rgba(0, 0, 0, 0.25));
+            }
+            .title-picture-block__img {
+                clip-path: polygon(20% 0%, 100% 0, 100% 100%, 0 100%, 0 15%);
+                border-radius: 20px;
+                @extend %img;
+                max-width: 400px;
+                max-height: 477px;
+                width: 100%;
+                height: 100%;
+            }
+            &__info-picture-border {
+                padding: 2px;
+                position: relative;
+                bottom: 130px;
+                margin-left: 100px;
+                width: fit-content;
+                clip-path: polygon(12% 0%, 100% 0, 100% 100%, 0 100%, 0 15%);
+                padding: 2px;
+                &::before{
+                    @include border-gradient(1px, 0px, linear-gradient(272.52deg, rgba(255, 166, 250, 0.3) 47.49%, rgba(60, 121, 213, 0.3) 98.81%));
+                }
+                @media screen and (max-width: 600px) {
+                    margin-left: 0px;
+                    width: 100%;
+                }
+                .info-picture {
+                    position: relative;
+                    width: 370px;
+                    @media screen and (max-width: 600px) {
+                        max-height: 400px;
+    
+                    }
+                    border: none;
+                    clip-path: polygon(12% 0%, 100% 0, 100% 100%, 0 100%, 0 15%);
+                    background: linear-gradient(
+                        90deg,
+                        rgba(255, 255, 255, 0.1) -1.52%,
+                        rgba(255, 255, 255, 0.024) 104.35%
+                    );
+                    backdrop-filter: blur(30.4001px);
+                }
+            }
+        }
+    }
+
+    .first-section__partners {
+        grid-area: partners;
+        .list-partners {
+            display: grid;
+            grid-template: "partner1 partner2 partner3 partner4";
+            grid-gap: 30px;
+            text-align: center;
+            align-items: center;
+            width: 100%;
+            @media screen and (max-width: 1100px) {
+                margin-top: 100px;
+                grid-template: 
+                "partner1 partner2" 
+                "partner3 partner4";
+            }
+            @media screen and (max-width: 600px) {
+                margin-top: 41px;
+            }
+            .partners__item {
+                margin-left: auto;
+                margin-right: auto;
+                .partners__img {
+                    @extend %img;
+                }
+            }
+        }
+    }
+}
